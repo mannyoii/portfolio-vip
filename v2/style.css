@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Satisfy&family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: steelblue; */
+  /* width: 100%; */
+  font-size: "Poppins", sans-serif;
+  /* height: 100vh; */
+  margin: 0;
+}
+
+.container-one {
+  /* font-family: inherit; */
+  background-color: #f8edeb;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #444;
+}
+
+.header {
+  /* background-color: aliceblue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 1200px;
+  height: 80px;
+}
+
+.logo {
+  font-family: "Satisfy", cursive;
+  font-size: 28px;
+}
+
+.nav ul {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+a {
+  color: #444;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+}
+
+.contact-btn {
+  padding: 10px 20px;
+  background-color: #495057;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+}
+
+.contact-btn:active {
+  transform: scale(0.98);
+}
+
+.container-main {
+  /* max-width: 1200px; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  background-color: #f8edeb;
+}
+
+/* .container-main {
+} */
+
+/* .intro { */
+/* } */
+
+.intro h1 {
+  /* position: absolute; */
+  /* top: 25%; */
+  /* left: 15%; */
+  word-wrap: normal;
+  font-family: "Montserrat", sans-serif;
+  /* transform: translateY(-100%); */
+  /* transition: transform 0.3s ease-in; */
+  /* width: 400px; */
+  /* height: 100px; */
+  /* background-color: #f8edeb; */
+}
+
+.img {
+  width: 600px;
+  height: 600px;
+  background-color: #f8edeb;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%239C92AC' fill-opacity='0.38'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img img {
+  /* background-size: cover; */
+  height: 550px;
+  width: auto;
+  /* position: absolute; */
+  /* top: 5%; */
+  /* right: 15%; */
+  /* left: 50%; */
+  /* right: 25%; */
+}
+
+.container-services {
+  width: 100%;
+  height: 100vh;
+  background-color: #f9dcc4;
+}
+
+.images {
+  /* width: 75%; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box {
+  margin: 10px;
+}
+
+.box img {
+  width: 400px;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+  .container-main {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .img {
+    background-image: none;
+  }
+}
